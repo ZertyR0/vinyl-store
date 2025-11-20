@@ -1,0 +1,77 @@
+# .gitignore para proyecto WordPress (f1store)
+# Ignora archivos que no conviene subir al repositorio público
+
+# WordPress uploads, caches, upgrades y backups
+/wp-content/uploads/
+/wp-content/upgrade/
+/wp-content/backups/
+/wp-content/backup-*/
+/wp-content/upgrade/*
+
+# Plugins/themes generados, caches y archivos temporales
+/wp-content/cache/
+/wp-content/wflogs/
+/wp-content/ai1wm-backups/
+
+# Ignorar archivos de configuración local (descomentar si quieres evitarlos)
+#wp-config.php
+#.env
+
+# Logs, dumps y bases de datos
+*.log
+*.sql
+*.sql.gz
+*.sqlite
+*.sqlite3
+
+# Node / npm
+node_modules/
+npm-debug.log
+package-lock.json
+yarn-error.log
+yarn-debug.log
+.pnpm-debug.log
+
+# Composer / PHP
+/vendor/
+composer.lock
+
+# IDEs y editores
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+*.code-workspace
+
+# Sistema operativo
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Windows Powershell history
+ConsoleHost_history.txt
+
+# SFTP / FTP configs
+.sftpconfig
+
+# Mac metadata
+Icon?
+
+# Build artefacts
+dist/
+build/
+
+# Otros temporales
+*.tmp
+*.swp
+*~
+
+# If you keep WordPress core out of the repo, you could ignore the whole root
+# except your custom content. Example advanced approach (commented out):
+# /*
+# !/wp-content/
+# !/wp-content/themes/
+# !/wp-content/plugins/
+# !/.gitignore
+
+# End of file
